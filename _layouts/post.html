@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+    <head>
+        <meta charset="{{ site.encoding }}">
+        <title>{{ site.title }} · "{{ page.title }}" by {{ page.author }}</title>
+        <meta name="description" content="{{ page.content | normalize_whitespace | strip_html | truncatewords: 20 }}">
+        <meta name="og:title" property="og:title" content="{{ page.title }}">
+        <link rel="canonical" href="{{ site.url }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{{ page.content | normalize_whitespace | strip_html | truncatewords: 20 }}">
+        <meta name="twitter:image" content="{{ site.url }}/assets/img/seo-cover.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+        <script src="/assets/js/code-copy.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        {% include header.html %}
+        <main id="site-content">
+            {{ content }}
+        </main>
+        {% include footer.html %}
+    </body>
+</html>

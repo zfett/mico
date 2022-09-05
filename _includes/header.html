@@ -1,0 +1,11 @@
+<header id="site-header">
+    <a href="/"><h2>{{ site.title }}</h2></a>
+    <nav id="site-nav">
+        {% assign pages = site.pages | sort:"sort" %}
+        {% for page in pages %}
+        {% if page.level == "top" %}
+        <a href="{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+        {% endfor %}
+    </nav>
+</header>

@@ -1,0 +1,58 @@
+/* global variables */
+$font-sans: Junction, sans-serif;
+$font-mono: Fira Code, monospace;
+
+$size-sml: .8em;
+$size-nor: 1.05em;
+$size-lrg: 2em;
+$size-xlg: 3em;
+
+$color-slate-0 : #e1e4ea;
+$color-slate-1 : #c3c7cc;
+$color-slate-2 : #a6a9ad;
+$color-slate-3 : #828589;
+$color-slate-4 : #575a5e;
+$color-slate-5 : #313438;
+$color-slate-6 : #1c1e1f;
+
+$color-blue-0  : #3475f7;
+$color-blue-1  : #0e5ec0;
+$color-blue-2  : #0f50a5;
+$color-blue-3  : #0d448b;
+$color-blue-4  : #10325e;
+$color-blue-5  : #0d203a;
+
+$color-red-0   : #ff2b2b;
+$color-red-1   : #c00e0e;
+$color-red-2   : #a50f0f;
+$color-red-3   : #8b0d0d;
+$color-red-4   : #5e1010;
+$color-red-5   : #3a0d0d;
+
+$color-green-0 : #26ff38;
+$color-green-1 : #0ec026;
+$color-green-2 : #0fa528;
+$color-green-3 : #0d8b22;
+$color-green-4 : #105e1a;
+$color-green-5 : #0d3a13;
+
+$color-orange-0: #ffa42d;
+$color-orange-1: #c0820e;
+$color-orange-2: #a5640f;
+$color-orange-3: #8b5f0d;
+$color-orange-4: #5e3c10;
+$color-orange-5: #3a250d;
+
+$color-violet-0: #cf2fff;
+$color-violet-1: #8e0ec0;
+$color-violet-2: #820fa5;
+$color-violet-3: #670d8b;
+$color-violet-4: #48105e;
+$color-violet-5: #2f0d3a;
+
+$link-normal: $color-slate-4;
+$link-hover : $color-blue-0;
+$link-active: $color-blue-5;
+
+$tstyle-embossed: 0 1px 0 rgb(255, 255, 255),
+                  0 -1px 0 $color-slate-2;

@@ -1,0 +1,35 @@
+title        : "mico for Jekyll"
+description  : "The mico theme for Jekyll is a clean, minimalist, and comfy theme for those seeking a simple yet familiar aesthetic."
+timezone     : America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+encoding     : utf-8
+language     : en-US # must be in BCP47 syntax. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang
+allowCodeCopy: true # if true, allows code in <pre> tags to be copied.
+
+####################################################
+# DO NOT CHANGE UNLESS YOU KNOW WHAT YOU'RE DOING! #
+####################################################
+
+defaults:
+  -
+    scope:
+      path: _posts
+      type: posts
+    values:
+      permalink: /post/:year/:month/:day/:title
+      layout: post
+
+future              : true
+source              : .
+destination         : ./_site
+plugins_dir         : _plugins # takes an array of strings and loads plugins in that order
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+sass:
+  sass_dir          : ./assets/css
+  implementation    : sass-embedded
+  style             : compressed
+  sourcemap         : always
+collections:
+  posts:
+    output          : true

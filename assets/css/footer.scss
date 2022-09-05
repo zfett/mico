@@ -1,0 +1,15 @@
+#site-footer {
+    margin: 4em auto 0 auto;
+    padding: 2em 0 0 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px dashed $color-slate-1;
+    background: url("/assets/img/footer-shade.webp") no-repeat top center/100% 100%;
+
+    span, a {
+        text-shadow: $tstyle-embossed;
+        font-size: .8rem;
+        color: $color-slate-3;
+        font-weight: 500;
+    }
+}

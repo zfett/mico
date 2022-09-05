@@ -1,0 +1,24 @@
+#site-header {
+    margin: 0 auto 4em auto;
+    padding: 0 0 2em 0;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px dashed $color-slate-1;
+    background: url("/assets/img/header-shade.webp") no-repeat bottom center/100% 100%;
+
+    h2 {
+        color: $color-slate-6;
+        margin: 0;
+        padding: 0;
+        line-height: 48px;
+    }
+
+    #site-nav { margin: 1em 0 0 0 }
+
+    a {
+        text-shadow: $tstyle-embossed;
+        font-size: 1.1rem;
+        text-decoration: none;
+        margin: 0 .5em;
+    }
+}

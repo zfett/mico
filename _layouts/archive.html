@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.language }}">
+    <head>
+        <meta charset="{{ site.encoding }}">
+        <title>{{ site.title }} · {{ page.title }}</title>
+        <meta name="description" content="{{ site.description }}">
+        <meta name="og:title" property="og:title" content="{{ page.title }}">
+        <link rel="canonical" href="{{ site.url }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:description" content="{{ site.description }}">
+        <meta name="twitter:image" content="{{ site.url }}/assets/img/seo-cover.jpg">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png">
+        <script src="/assets/js/code-copy.js" type="text/javascript" defer></script>
+    </head>
+    <body>
+        {% include header.html %}
+        <main id="site-content">
+            <h1>Archive</h1>
+            {% for post in site.posts %}
+            {% assign currentdate = post.date | date: "%Y" %}
+            {% if currentdate != date %}
+                <h2 id="y{{currentdate}}">{{ currentdate }}</h2>
+            {% assign date = currentdate %} 
+            {% endif %}
+            <ul><li><a href="{{ post.url }}">"{{ post.title }}"</a> by {{ post.author }}. <i>Published on {{ post.date | date: "%A, %B %d, %Y" }}</i></li></ul>
+            {% endfor %}
+        </main>
+        {% include footer.html %}
+    </body>
+</html>

@@ -1,0 +1,29 @@
+/* syntax highlighting - based VERY loosely on the Monokai Classic color scheme */
+@import "vars";
+
+.highlight .k,
+           .kd,
+           .kn  { color: $color-blue-0 }
+
+.highlight .nf  { color: $color-green-0;
+                  font-weight: 800 }
+
+.highlight .p,
+           .nt  { color: $color-violet-0 }
+
+.highlight .n,
+           .nx,
+           .nl,
+           .na,
+           .nn  { color: $color-slate-0 }
+
+.highlight .s,
+           .s1  { color: $color-orange-0 }
+
+.highlight .nb  { color: $color-slate-0 }
+
+.highlight .c1,
+           .c,
+           .o,
+           .dl,
+           .cp  { color: $color-slate-3 }
