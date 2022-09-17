@@ -1,0 +1,2 @@
+---
+BUNDLE_BUILD__EVENTMACHINE: "--with-openssl-dir=/usr/local/Cellar/openssl@1.1/1.1.1h"
