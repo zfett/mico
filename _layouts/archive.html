@@ -19,14 +19,22 @@
         {% include header.html %}
         <main id="site-content">
             <h1>Archive</h1>
-            {% for post in site.posts %}
+            {% assign postCount = site.posts | size %}
             {% assign currentdate = post.date | date: "%Y" %}
+            {% assign date = currentdate %} 
+
+            {% if postCount > 0 %}
+
+            {% for post in site.posts %}
             {% if currentdate != date %}
                 <h2 id="y{{currentdate}}">{{ currentdate }}</h2>
-            {% assign date = currentdate %} 
             {% endif %}
             <ul><li><a href="{{ post.url }}">"{{ post.title }}"</a> by {{ post.author }}. <i>Published on {{ post.date | date: "%A, %B %d, %Y" }}</i></li></ul>
             {% endfor %}
+
+            {% elsif postCount == 0 %}
+            <p style="text-align:center" >No posts available...</p>
+            {% endif %}
         </main>
         {% include footer.html %}
     </body>
