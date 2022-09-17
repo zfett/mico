@@ -1,10 +1,10 @@
 @import "fonts/junction/junction.css";
 @import "fonts/fira-code/fira_code.css";
 
-@import "vars";
-@import "syntax";
-@import "footer";
-@import "header";
+@import "vars.scss";
+@import "syntax.scss";
+@import "footer.scss";
+@import "header.scss";
 
 /* element code */
 ::selection {
